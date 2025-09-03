@@ -1,26 +1,97 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Swim Coach Color Palette */
+  --primary-blue: #0A74DA;
+  --accent-aqua: #4FD1C5;
+  --dark-navy: #1E293B;
+  --medium-gray: #475569;
+  --light-gray: #F5F7FA;
+  --white: #FFFFFF;
+  --golden-yellow: #FACC15;
+  
+  /* Theme Variables */
+  --background: var(--white);
+  --foreground: var(--dark-navy);
+  --text-primary: var(--dark-navy);
+  --text-secondary: var(--medium-gray);
+  --section-bg: var(--light-gray);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary-blue);
+  --color-accent: var(--accent-aqua);
+  --color-highlight: var(--golden-yellow);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-section-bg: var(--section-bg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--dark-navy);
+    --foreground: var(--white);
+    --text-primary: var(--white);
+    --text-secondary: #CBD5E1;
+    --section-bg: #334155;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif; */
+  line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Text Shadow Effects from Figma */
+.text-shadow-header {
+  text-shadow: rgba(0,0,0,0.3) 0px 4px 20px;
+}
+
+.text-shadow-paragraph {
+  text-shadow: rgba(0,0,0,0.8) 0px 4px 20px;
+}
+
+/* Custom button styles */
+.btn-primary {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0961C4;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--golden-yellow);
+  color: var(--dark-navy);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #EAB308;
+  transform: translateY(-1px);
 }
