@@ -185,7 +185,7 @@ export default function Plans() {
                   className="font-poppins font-medium text-white text-lg sm:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto"
                   style={{ textShadow: 'rgba(0,0,0,0.8) 0px 4px 20px' }}
                 >
-                  Let's find the training program that's right for you. Answer a couple questions to get personalized recommendations.
+                  Let&apos;s find the training program that&apos;s right for you. Answer a couple questions to get personalized recommendations.
                 </p>
               </div>
 
@@ -233,7 +233,7 @@ export default function Plans() {
                     className="font-poppins font-medium text-white text-2xl lg:text-3xl mb-8 text-center"
                     style={{ textShadow: 'rgba(0,0,0,0.3) 0px 4px 20px' }}
                   >
-                    What's your biggest swimming goal right now?
+                    What&apos;s your biggest swimming goal right now?
                   </h3>
                   <div className="grid gap-4">
                     {[

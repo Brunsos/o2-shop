@@ -98,7 +98,7 @@ export default function Home() {
               className="font-poppins font-medium opacity-80 leading-normal text-lg sm:text-xl md:text-2xl lg:text-[24px] xl:text-[24px] max-w-[828px]"
               style={{ textShadow: 'rgba(0,0,0,0.8) 0px 4px 20px' }}
             >
-              Transform your technique and discover what you're truly capable of.
+              Transform your technique and discover what you&apos;re truly capable of.
             </p>
           </div>
 

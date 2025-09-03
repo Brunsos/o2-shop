@@ -131,7 +131,7 @@ export default function AboutUs() {
                   className="font-poppins font-medium text-white text-lg sm:text-xl lg:text-2xl leading-relaxed mb-6"
                   style={{ textShadow: 'rgba(0,0,0,0.8) 0px 4px 20px' }}
                 >
-                  With over 15 years of competitive swimming experience and 8 years of professional coaching, I'm dedicated to helping swimmers of all levels reach their full potential in the water.
+                  With over 15 years of competitive swimming experience and 8 years of professional coaching, I&apos;m dedicated to helping swimmers of all levels reach their full potential in the water.
                 </p>
                 <p 
                   className="font-poppins font-medium text-white text-lg sm:text-xl lg:text-2xl leading-relaxed mb-6"
@@ -210,7 +210,7 @@ export default function AboutUs() {
                   className="font-poppins font-medium text-white text-lg sm:text-xl lg:text-2xl leading-relaxed"
                   style={{ textShadow: 'rgba(0,0,0,0.8) 0px 4px 20px' }}
                 >
-                  We believe that every swimmer deserves personalized attention and a training program tailored to their unique goals, whether that's mastering the basics or competing at the highest levels.
+                  We believe that every swimmer deserves personalized attention and a training program tailored to their unique goals, whether that&apos;s mastering the basics or competing at the highest levels.
                 </p>
               </div>
             </div>
