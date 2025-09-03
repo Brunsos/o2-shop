@@ -11,7 +11,8 @@
       "mcp__figma-dev-mode-mcp-server__create_design_system_rules",
       "Bash(git push:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

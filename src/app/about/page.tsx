@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getAssetPath } from '@/lib/utils';
 
 export default function AboutUs() {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
@@ -44,7 +45,7 @@ export default function AboutUs() {
       <div className="fixed inset-0 z-0">
         <div 
           className="absolute inset-0 bg-center bg-cover bg-no-repeat w-full h-full"
-          style={{ backgroundImage: `url('/HeaderBackground.png')` }}
+          style={{ backgroundImage: `url('${getAssetPath('/HeaderBackground.png')}')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#09102447] to-[#091024] opacity-60 w-full h-full" />
       </div>
@@ -58,7 +59,7 @@ export default function AboutUs() {
             className="hover:opacity-90 transition-opacity duration-300 flex-shrink-0 ml-0 sm:ml-4 lg:ml-[154px]"
           >
             <Image
-              src="/O2Logo.png"
+              src={getAssetPath('/O2Logo.png')}
               alt="O2 Swimming Coach Logo"
               width={80}
               height={80}

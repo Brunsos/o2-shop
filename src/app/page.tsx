@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getAssetPath } from '@/lib/utils';
 
 export default function Home() {
   const headerTextRef = useRef<HTMLDivElement>(null);
@@ -70,7 +71,7 @@ export default function Home() {
         {/* Background Header */}
         <div 
           className="absolute inset-0 bg-center bg-cover bg-no-repeat w-full h-full"
-          style={{ backgroundImage: `url('/HeaderBackground.png')` }}
+          style={{ backgroundImage: `url('${getAssetPath('/HeaderBackground.png')}')` }}
         />
         
         {/* Navy Gradient Overlay */}
@@ -144,7 +145,7 @@ export default function Home() {
             className="hover:opacity-90 transition-opacity duration-300 flex-shrink-0 ml-0 sm:ml-4 lg:ml-[154px]"
           >
             <Image
-              src="/O2Logo.png"
+              src={getAssetPath('/O2Logo.png')}
               alt="O2 Swimming Coach Logo"
               width={80}
               height={80}
