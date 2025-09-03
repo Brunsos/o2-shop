@@ -9,7 +9,9 @@
       "mcp__figma-dev-mode-mcp-server__get_image",
       "Bash(npm install:*)",
       "mcp__figma-dev-mode-mcp-server__create_design_system_rules",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
